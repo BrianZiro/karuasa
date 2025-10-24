@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@)-5u--wvn5)+^bg+^f8b5^%ewz45(c3jzjnpzkyw83sw*66e4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['karuasa.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -50,8 +50,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
